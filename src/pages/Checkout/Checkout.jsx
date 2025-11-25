@@ -28,7 +28,7 @@ export default function Checkout(){
         total,
         cardNumber
       });
-
+// ready for deploy
       if (res.message) {
         // clear cart and then navigate
         clearCart();
