@@ -1,0 +1,21 @@
+.profile {
+  padding: 40px 32px;
+}
+
+.list {
+  margin-top: 20px;
+  display: grid;
+  gap: 20px;
+}
+
+.booking {
+  padding: 18px;
+  border-radius: 12px;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+}
+
+.status {
+  font-weight: 700;
+  color: var(--primary);
+}

@@ -1,0 +1,63 @@
+:root{
+  --black: #0b0b0b;
+  --white: #ffffff;
+  --grey: #9b9b9b;
+  --accent: #00d4ff;
+
+  --button-bg-light: var(--black);
+  --button-text-light: var(--white);
+  --button-bg-dark: var(--white);
+  --button-text-dark: var(--black);
+}
+
+/* Light theme (grey dominant) */
+body.light{
+  --bg: var(--white);
+  --text: var(--black);
+  --muted: var(--grey);
+  --card: #f3f3f3;
+  --button-bg: var(--button-bg-light);
+  --button-text: var(--button-text-light);
+}
+
+/* Dark theme (black dominant) */
+body.dark{
+  --bg: var(--black);
+  --text: var(--white);
+  --muted: #bdbdbd;
+  --card: #111111;
+  --button-bg: var(--button-bg-dark);
+  --button-text: var(--button-text-dark);
+}
+
+/* fallback defaults */
+:root {
+  --bg: var(--white);
+  --text: var(--black);
+  --muted: var(--grey);
+  --card: #f6f6f6;
+  --button-bg: var(--button-bg-light);
+  --button-text: var(--button-text-light);
+}
+
+*{box-sizing:border-box}
+body{ margin:0; font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial; background:var(--bg); color:var(--text); transition:background .18s ease, color .18s ease; }
+
+/* container */
+.app-container{ max-width:1200px; margin:0 auto; padding:28px; }
+
+/* headings */
+.h1{ font-size:38px; line-height:1.05; margin-bottom:10px; letter-spacing:-0.6px; }
+.h2{ font-size:22px; margin-bottom:6px; font-weight:600; }
+
+/* card */
+.card{ background:var(--card); border-radius:12px; padding:14px; border:1px solid rgba(0,0,0,0.06); }
+
+/* inputs & btns */
+.input{ width:100%; padding:12px 14px; border-radius:10px; border:1px solid rgba(0,0,0,0.06); margin-bottom:12px; background:transparent; color:var(--text); }
+.btn{ background:var(--button-bg); color:var(--button-text); border-radius:10px; padding:10px 14px; border:none; cursor:pointer; font-weight:800; }
+
+/* helpers */
+.muted{ color:var(--muted); }
+.small{ font-size:13px; color:var(--muted); }
+.frame{ border-radius:12px; padding:18px; background:linear-gradient(180deg, rgba(0,0,0,0.01), rgba(255,255,255,0.01)); border:1px solid rgba(0,0,0,0.04); }

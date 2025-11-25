@@ -1,0 +1,19 @@
+.notfound {
+  padding: 60px;
+  text-align: center;
+}
+
+.notfound h1 {
+  font-size: 90px;
+  color: var(--primary);
+}
+
+.back {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 18px;
+  border-radius: 8px;
+  background: var(--primary);
+  color: #fff;
+  text-decoration: none;
+}

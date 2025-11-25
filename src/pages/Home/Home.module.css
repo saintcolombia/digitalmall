@@ -1,0 +1,123 @@
+.wrapper {
+  position: relative;
+  padding: 40px 0;
+}
+
+/* ---------- Decorative Background Gradients ---------- */
+.gradientLeft, .gradientRight {
+  position: absolute;
+  top: 0;
+  width: 260px;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.gradientLeft {
+  left: 0;
+  background: radial-gradient(circle at left, rgba(255,255,255,0.12), transparent 60%);
+}
+
+.gradientRight {
+  right: 0;
+  background: radial-gradient(circle at right, rgba(255,255,255,0.12), transparent 60%);
+}
+
+/* ---------- Hero Section ---------- */
+.hero {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 40px;
+  align-items: center;
+  padding: 40px 0;
+  position: relative;
+  z-index: 2;
+}
+
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bigLogo {
+  width: 90%;
+  max-width: 260px;
+  filter: drop-shadow(0 6px 20px rgba(0,0,0,0.25));
+}
+
+/* ---------- Glassmorphism Text Panel ---------- */
+.glass {
+  backdrop-filter: blur(22px) saturate(150%);
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 22px;
+  padding: 30px;
+  box-shadow: 0 6px 40px rgba(0,0,0,0.18);
+  color: var(--text);
+}
+
+.title {
+  font-size: 44px;
+  margin: 0 0 10px;
+}
+
+.subtitle {
+  font-size: 17px;
+  opacity: 0.85;
+}
+
+/* ---------- Vision Statement ---------- */
+.visionBox {
+  margin-top: 20px;
+  line-height: 1.55;
+}
+
+.visionBox h2 {
+  margin-bottom: 6px;
+}
+
+.exploreBtn {
+  margin-top: 12px;
+  padding: 10px 16px;
+  border-radius: 10px;
+  background: var(--primary);
+  color: var(--onPrimary);
+  cursor: pointer;
+  border: none;
+}
+
+/* ---------- Slideshow Section ---------- */
+.sliderSection {
+  padding: 40px 0;
+}
+
+.featured {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 18px;
+}
+
+.sliderWrapper {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 4px 26px rgba(0,0,0,0.25);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 880px) {
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .left {
+    margin-bottom: 30px;
+  }
+
+  .bigLogo {
+    max-width: 200px;
+  }
+}

@@ -1,0 +1,18 @@
+.cart {
+  padding: 40px;
+}
+
+.item {
+  padding: 18px;
+  margin-bottom: 12px;
+  background: var(--bg-alt);
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+.total {
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--primary);
+}
