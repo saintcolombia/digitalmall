@@ -1,5 +1,5 @@
 // src/utils/api.js
-const BASE = import.meta.env.VITE_BACKEND_URL || "http://localhost:3000";
+const BASE = 'https://digitalmallbackend.onrender.com'
 
 /**
  * Helper that tries both /api/... and non-/api/... endpoints.
